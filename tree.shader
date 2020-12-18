@@ -78,7 +78,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
         color = mix(color, layer, layer.a);
     }
 
-    layer = Layer(uv+vec2(t,0)-mouse, blur);
+    layer = Layer(uv+vec2(t,1)-mouse, .07);
     color = mix(color, layer*.1, layer.a);
     
     fragColor = color;

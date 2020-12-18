@@ -1,3 +1,4 @@
+//https://www.youtube.com/watch?v=bigjgiavOM0
 float Circle(vec2 uv, vec2 position, float radius, float blur) {
     float distance = length(uv-position);
     float c = smoothstep(radius,radius-blur, distance);
